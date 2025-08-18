@@ -74,8 +74,8 @@
         <div class="card">
           <h3>Быстрая заявка</h3>
           <form class="form lead" novalidate>
-            <input class="input" name="name" placeholder="Ваше имя" aria-label="Имя">
-            <input class="input" name="phone" placeholder="Телефон" aria-label="Телефон">
+            <input class="input" name="name" placeholder="Ваше имя" aria-label="Имя" required>
+            <input class="input" name="phone" placeholder="Телефон" aria-label="Телефон" required>
             <select class="select" name="role" aria-label="Тип работ">
               <option value="">Тип работ</option>
               <option>Грузчики</option>
@@ -101,79 +101,53 @@
       </div>
     </section>
 
-    <section id="calc" class="section alt">
+    <section class="section alt">
       <div class="container">
-        <h2>Мини‑калькулятор стоимости</h2>
-        <div class="grid-2 mt-12">
+        <h2 class="text-center">Наши преимущества</h2>
+        <div class="grid-3">
           <div class="card">
-            <form class="form" onsubmit="return false;">
-              <label>Сколько сотрудников требуется?
-                <input class="input" type="number" min="1" name="people" value="10">
-              </label>
-              <label>Сколько часов смена?
-                <input class="input" type="number" min="1" name="hours" value="8">
-              </label>
-              <label>Пакет услуг
-                <select class="select" name="package">
-                  <option value="start">Старт</option>
-                  <option value="peak">Пик‑сезон</option>
-                  <option value="flow">Постоянный поток</option>
-                </select>
-              </label>
-            </form>
+            <div class="card-icon">⚡</div>
+            <h3>Быстрый старт</h3>
+            <p>Персонал на объект за 3 часа в экстренных случаях или в течение 2 дней по плану</p>
           </div>
           <div class="card">
-            <h3>Оценка бюджета</h3>
-            <p class="note">Базовая ставка: 350 ₽/час за сотрудника. Коэффициенты пакетов учтены.</p>
-            <p class="mt-12">Итоговая оценка:</p>
-            <p id="calcResult" class="price" style="font-size:32px;">—</p>
-            <div class="mt-12">
-              <a class="button" href="#lead">Получить точный расчёт</a>
-              <button class="button-ghost" data-open-modal="callback">Обратный звонок</button>
-            </div>
+            <div class="card-icon">🛡️</div>
+            <h3>Полная защита</h3>
+            <p>Все сотрудники имеют медкнижки, трудовые договоры и страховку</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📈</div>
+            <h3>Гибкость</h3>
+            <p>Смена от 6 часов, возможность масштабирования под ваши потребности</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="calc">
       <div class="container">
-        <h2>Пакеты услуг под ваши задачи</h2>
-        <div class="grid-3 mt-12">
-          <div class="card">
-            <h3>Старт</h3>
-            <p class="note">Разовые или пилотные задачи</p>
-            <ul class="list mt-12">
-              <li>Вывод от 5 сотрудников</li>
-              <li>Смена от 6 часов</li>
-              <li>Документы и медкнижки</li>
-            </ul>
-            <div class="mt-16">
-              <a class="button" href="services.html">Запросить расчёт</a>
+        <h2 class="text-center">Калькулятор стоимости</h2>
+        <div class="calc-container">
+          <div class="calc-form">
+            <div class="calc-row">
+              <label>Количество человек:</label>
+              <input type="number" name="people" min="1" max="100" value="2">
             </div>
-          </div>
-          <div class="card">
-            <h3>Пик‑сезон</h3>
-            <p class="note">Быстрое масштабирование в сезон</p>
-            <ul class="list mt-12">
-              <li>Резерв до 150+ сотрудников</li>
-              <li>Координатор на объекте</li>
-              <li>Замены без простоев</li>
-            </ul>
-            <div class="mt-16">
-              <a class="button" href="services.html">Запросить расчёт</a>
+            <div class="calc-row">
+              <label>Часов в смене:</label>
+              <input type="number" name="hours" min="1" max="24" value="8">
             </div>
-          </div>
-          <div class="card">
-            <h3>Постоянный поток</h3>
-            <p class="note">Долгосрочная поддержка</p>
-            <ul class="list mt-12">
-              <li>SLA и KPI</li>
-              <li>Гибкое ценообразование</li>
-              <li>Отчётность и прозрачность</li>
-            </ul>
-            <div class="mt-16">
-              <a class="button" href="services.html">Запросить расчёт</a>
+            <div class="calc-row">
+              <label>Пакет услуг:</label>
+              <select name="package">
+                <option value="start">Старт (базовый)</option>
+                <option value="flow">Поток (скидка 10%)</option>
+                <option value="peak">Пик (премиум +15%)</option>
+              </select>
+            </div>
+            <div class="calc-result">
+              <div class="calc-total">Итого: <span id="calcResult">5 600 ₽</span></div>
+              <div class="calc-note">* Цена включает НДС и все налоги</div>
             </div>
           </div>
         </div>
@@ -182,111 +156,90 @@
 
     <section class="section alt">
       <div class="container">
-        <h2>Социальный пруф</h2>
-        <div class="proof mt-12">
-          <div class="p">
-            <span class="logo" aria-hidden="true"></span>
-            <div>
-              <strong>Яндекс</strong><br>
-              Рейтинг 4.8/5 — 120 отзывов
-            </div>
+        <h2 class="text-center">Популярные услуги</h2>
+        <div class="grid-2">
+          <div class="service-card">
+            <h3>Грузчики</h3>
+            <p>Погрузка, разгрузка, перемещение грузов. От 350 ₽/час за человека.</p>
+            <ul class="service-features">
+              <li>Физически крепкие сотрудники</li>
+              <li>Опыт работы с разными грузами</li>
+              <li>Соблюдение техники безопасности</li>
+            </ul>
+            <a href="services.html#loaders" class="button-ghost">Подробнее</a>
           </div>
-          <div class="p">
-            <span class="logo" aria-hidden="true"></span>
-            <div>
-              <strong>Avito</strong><br>
-              300+ завершённых заказов
-            </div>
+          <div class="service-card">
+            <h3>Комплектация заказов</h3>
+            <p>Сбор и комплектация заказов для интернет-магазинов и складов.</p>
+            <ul class="service-features">
+              <li>Внимательность к деталям</li>
+              <li>Знание систем учета</li>
+              <li>Высокая скорость работы</li>
+            </ul>
+            <a href="services.html#picking" class="button-ghost">Подробнее</a>
           </div>
-          <div class="p">
-            <span class="logo" aria-hidden="true"></span>
-            <div>
-              <strong>2ГИС</strong><br>
-              Проверенный подрядчик
-            </div>
-          </div>
-        </div>
-        <div class="mt-12">
-          <a class="button-ghost" href="https://yandex.ru/maps" target="_blank" rel="noopener">Смотреть отзывы</a>
         </div>
       </div>
     </section>
 
-    <section id="lead" class="section">
+    <section class="section">
       <div class="container">
-        <div class="grid-2">
-          <div>
-            <h2>Получите предложение за 10 минут</h2>
-            <p>Опишите объект и требуемые роли — мы быстро рассчитаем бюджет и сроки вывода персонала.</p>
-            <ul class="list mt-12">
-              <li>Юридическая чистота и официальные договоры</li>
-              <li>Подбор и обучение персонала</li>
-              <li>Координатор на объекте</li>
-            </ul>
-          </div>
-          <div class="card">
-            <form class="form lead" novalidate>
-              <input class="input" name="name" placeholder="Ваше имя">
-              <input class="input" name="phone" placeholder="Телефон">
-              <textarea class="textarea" name="task" placeholder="Опишите задачу"></textarea>
-              <button class="button" type="submit">Получить предложение</button>
-              <div class="help">Мы перезвоним в течение 10 минут</div>
-            </form>
+        <div class="cta-block">
+          <h2>Готовы начать работу?</h2>
+          <p>Оставьте заявку прямо сейчас и получите персонал на объект в кратчайшие сроки</p>
+          <div class="cta-buttons">
+            <button class="button" data-open-modal="callback">Оставить заявку</button>
+            <a href="tel:88007000000" class="button-ghost">Позвонить 8-800-700-00-00</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="container">
-      <div class="cols">
-        <div>
-          <h3>LegioN</h3>
-          <p>Аутсорсинг линейного персонала в Новосибирске и области. Вывод на объект за 3 часа или 2 дня.</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>LegioN</h4>
+          <p>Аутсорсинг персонала в Новосибирске и области</p>
         </div>
-        <div>
-          <h4>Навигация</h4>
-          <p><a href="services.html">Услуги</a></p>
-          <p><a href="about.html">О компании</a></p>
-          <p><a href="tenders.html">Тендеры и документы</a></p>
-        </div>
-        <div>
+        <div class="footer-section">
           <h4>Контакты</h4>
-          <p>Новосибирск, ул. Примерная, 1</p>
-          <p><a href="tel:88007000000">8-800-700-00-00</a></p>
-          <p><a href="mailto:sales@legion.ru">sales@legion.ru</a></p>
+          <p>Телефон: 8-800-700-00-00</p>
+          <p>Email: info@legion-nsk.ru</p>
+        </div>
+        <div class="footer-section">
+          <h4>Услуги</h4>
+          <ul>
+            <li><a href="services.html#loaders">Грузчики</a></li>
+            <li><a href="services.html#picking">Комплектация</a></li>
+            <li><a href="services.html#cleaning">Уборка</a></li>
+          </ul>
         </div>
       </div>
-      <small>© <span id="year"></span> LegioN. Все права защищены.</small>
+      <div class="footer-bottom">
+        <p>&copy; 2024 LegioN. Все права защищены.</p>
+      </div>
     </div>
   </footer>
 
-  <div class="fab">
-    <button id="toTop" class="btn" aria-label="Наверх">↑ Наверх</button>
-  </div>
-
-  <!-- Modal callback -->
-  <div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal">
-      <div class="modal-header">
-        <h3 id="modalTitle">Обратный звонок</h3>
-        <button id="modalClose" class="modal-close" aria-label="Закрыть">✕</button>
-      </div>
-      <div class="modal-body mt-12">
-        <form class="form lead" novalidate>
-          <input class="input" name="name" placeholder="Ваше имя">
-          <input class="input" name="phone" placeholder="Телефон">
-          <button class="button" type="submit">Жду звонка</button>
-          <div class="help">Круглосуточно, без выходных</div>
-        </form>
-      </div>
+  <!-- Modal Callback -->
+  <div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">&times;</button>
+      <h3>Обратный звонок</h3>
+      <form class="form lead" novalidate>
+        <input class="input" name="name" placeholder="Ваше имя" required>
+        <input class="input" name="phone" placeholder="Телефон" required>
+        <textarea class="textarea" name="message" placeholder="Сообщение (необязательно)"></textarea>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </div>
   </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- Back to top button -->
+  <button id="toTop" class="to-top" style="display: none;">↑</button>
+
   <script src="script.js"></script>
 </body>
 </html>
