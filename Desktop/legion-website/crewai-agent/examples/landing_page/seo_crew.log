@@ -1,0 +1,31 @@
+2025-08-19 02:50:14,446 - INFO - 🚀 Начинаем создание лендинга для идеи: 
+    Мы создаем инновационное приложение для управления личными финансами, 
+    которое помогает люд...
+2025-08-19 02:50:14,446 - INFO - 🔍 Idea Analyst: Анализирую бизнес-идею...
+2025-08-19 02:50:21,876 - INFO - HTTP Request: POST https://api.proxyapi.ru/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-19 02:50:21,886 - INFO - ✅ Idea Analyst: Анализ завершен
+2025-08-19 02:55:45,210 - INFO - Начинаем создание лендинга для идеи: 
+    Мы создаем инновационное приложение для управления личными финансами, 
+    которое помогает люд...
+2025-08-19 02:55:45,218 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-08-19 02:55:45,272 - ERROR - Ошибка при создании лендинга: litellm.InternalServerError: InternalServerError: OpenAIException - 'ascii' codec can't encode characters in position 7-9: ordinal not in range(128)
+2025-08-19 02:57:11,603 - INFO - Начинаем создание лендинга для идеи: 
+    Мы создаем инновационное приложение для управления личными финансами, 
+    которое помогает люд...
+2025-08-19 02:57:11,612 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-08-19 02:57:11,664 - ERROR - Ошибка при создании лендинга: litellm.InternalServerError: InternalServerError: OpenAIException - 'ascii' codec can't encode characters in position 7-9: ordinal not in range(128)
+2025-08-19 02:57:41,671 - ERROR - HTTPSConnectionPool(host='telemetry.crewai.com', port=4319): Read timed out. (read timeout=29.999998807907104)
+2025-08-19 02:59:55,260 - INFO - Starting landing page creation for idea: 
+    We are creating an innovative personal finance management application 
+    that helps people tr...
+2025-08-19 02:59:55,269 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-08-19 02:59:55,325 - ERROR - Error creating landing page: litellm.InternalServerError: InternalServerError: OpenAIException - 'ascii' codec can't encode characters in position 7-9: ordinal not in range(128)
+2025-08-19 03:00:49,520 - INFO - 🚀 Начинаем создание лендинга для идеи: 
+    Мы создаем инновационное приложение для управления личными финансами, 
+    которое помогает люд...
+2025-08-19 03:00:49,521 - INFO - 🔍 Idea Analyst: Анализирую бизнес-идею...
+2025-08-19 03:00:56,400 - INFO - HTTP Request: POST https://api.proxyapi.ru/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-19 03:00:56,478 - INFO - ✅ Idea Analyst: Анализ завершен

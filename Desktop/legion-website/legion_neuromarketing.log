@@ -1,0 +1,9 @@
+2025-08-19 03:24:28,133 - INFO - 🧠 Analyzing LEGION neuromarketing strategy...
+2025-08-19 03:24:49,383 - INFO - HTTP Request: POST https://api.proxyapi.ru/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-19 03:24:49,398 - INFO - ✅ Neuromarketing analysis completed
+2025-08-19 03:24:49,398 - INFO - 🎯 Generating lead magnet strategy...
+2025-08-19 03:25:08,498 - INFO - HTTP Request: POST https://api.proxyapi.ru/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-19 03:25:08,501 - INFO - ✅ Lead magnet strategy generated
+2025-08-19 03:25:08,501 - INFO - ⚡ Designing conversion optimization...
+2025-08-19 03:25:25,699 - INFO - HTTP Request: POST https://api.proxyapi.ru/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-19 03:25:25,702 - INFO - ✅ Conversion optimization designed

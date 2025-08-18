@@ -1,0 +1,4 @@
+# Минимальные зависимости для работы
+crewai==0.159.0
+langchain-openai==0.3.30
+python-dotenv==1.1.1

@@ -1,28 +1,23 @@
 {
   "servers": [
     {
-      "name": "seo-mcp",
-      "command": "seo-mcp-server",
+      "name": "filesystem",
+      "command": "mcp-server-filesystem",
       "args": []
     },
     {
-      "name": "analytics-mcp",
-      "command": "analytics-mcp-server",
+      "name": "analytics",
+      "command": "analytics-mcp",
       "args": []
     },
     {
-      "name": "ab-testing-mcp",
-      "command": "ab-testing-mcp-server",
+      "name": "figma",
+      "command": "figma-mcp",
       "args": []
     },
     {
-      "name": "ui-ux-review-mcp",
-      "command": "ui-ux-review-mcp-server",
-      "args": []
-    },
-    {
-      "name": "copywriting-mcp",
-      "command": "copywriting-mcp-server",
+      "name": "ref-tools",
+      "command": "ref-tools-mcp",
       "args": []
     }
   ]

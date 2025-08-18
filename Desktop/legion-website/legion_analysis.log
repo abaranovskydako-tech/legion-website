@@ -1,0 +1,9 @@
+2025-08-19 03:08:05,836 - INFO - 🔍 Analyzing LEGION business...
+2025-08-19 03:08:20,999 - INFO - HTTP Request: POST https://api.proxyapi.ru/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-19 03:08:21,019 - INFO - ✅ LEGION analysis completed
+2025-08-19 03:08:21,019 - INFO - 🔍 Generating SEO recommendations...
+2025-08-19 03:08:35,848 - INFO - HTTP Request: POST https://api.proxyapi.ru/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-19 03:08:35,852 - INFO - ✅ SEO recommendations generated
+2025-08-19 03:08:35,853 - INFO - 🎨 Suggesting landing page improvements...
+2025-08-19 03:08:52,870 - INFO - HTTP Request: POST https://api.proxyapi.ru/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-19 03:08:52,872 - INFO - ✅ Landing page improvements suggested
