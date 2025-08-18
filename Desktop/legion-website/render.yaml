@@ -1,0 +1,7 @@
+services:
+  - type: static
+    name: legion-website-classic
+    rootDir: .
+    buildCommand: echo "Build not needed"
+    publishPath: .
+    pullRequestPreviewsEnabled: false
