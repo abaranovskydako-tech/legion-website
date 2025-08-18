@@ -2,7 +2,7 @@ services:
   - type: web
     name: legion-website-classic
     env: static
-    buildCommand: cp index.html dist/ && cp style.css dist/ && cp script.js dist/
+    buildCommand: echo "Using pre-built dist folder"
     staticPublishPath: ./dist
     envVars:
       - key: NODE_VERSION
