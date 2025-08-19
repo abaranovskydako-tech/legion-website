@@ -1,7 +1,7 @@
 services:
-  - type: static
-    name: legion-website-classic
+  - type: web
+    name: legion-website-final
+    env: static
     rootDir: .
-    buildCommand: echo "Build not needed"
-    publishPath: .
-    pullRequestPreviewsEnabled: false
+    buildCommand: npm run build
+    publishPath: dist
