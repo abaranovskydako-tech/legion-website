@@ -5,3 +5,4 @@ services:
     rootDir: .
     buildCommand: npm run build
     publishPath: dist
+
