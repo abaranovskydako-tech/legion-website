@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: legion-website-classic
+    name: legion-website-final
     env: static
     rootDir: .
     buildCommand: npm run build
