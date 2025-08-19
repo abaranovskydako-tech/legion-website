@@ -1,0 +1,14 @@
+{
+  "name": "legion-website-classic",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "postbuild": "cp script.js dist/script.js",
+    "preview": "vite preview --port 5173",
+    "lighthouse": "lighthouse --output=json --output-path=./lighthouse-report.json",
+    "axe": "axe --dir=./dist --format=json --output=./axe-report.json"
+  }
+}
