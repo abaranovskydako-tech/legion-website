@@ -1,8 +1,13 @@
 services:
   - type: web
-    name: legion-website-final
+    name: legion-website-classic
     env: static
-    rootDir: .
-    buildCommand: npm run build
-    publishPath: dist
-
+    buildCommand: echo "Using pre-built dist folder"
+    staticPublishPath: ./legion-website-classic/dist
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
