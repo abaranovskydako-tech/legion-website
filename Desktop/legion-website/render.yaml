@@ -5,3 +5,7 @@ services:
     rootDir: .
     buildCommand: npm run build
     publishPath: dist
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: "public, max-age=3600"
