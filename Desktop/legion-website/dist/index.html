@@ -3,13 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Legion — обновлённая сборка</title>
-    <script type="module" crossorigin src="/assets/index-Selz6XQ8.js"></script>
+    <title>Legion — подбор персонала</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; }
+      .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
+      .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+      .hero p { font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+      .tripwire { background: white; border-radius: 12px; padding: 30px; margin: 40px auto; max-width: 600px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+      .tripwire__content { display: flex; align-items: center; gap: 20px; }
+      .tripwire__icon { font-size: 3rem; }
+      .tripwire__text { flex: 1; }
+      .tripwire__title { font-size: 1.5rem; margin-bottom: 10px; color: #333; }
+      .tripwire__subtitle { font-size: 1.1rem; color: #666; margin-bottom: 15px; }
+      .tripwire__description { color: #777; margin-bottom: 20px; }
+      .tripwire__button { background: #667eea; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 1.1rem; cursor: pointer; transition: background 0.3s; }
+      .tripwire__button:hover { background: #5a6fd8; }
+      
+      .modal-backdrop { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; }
+      .modal { background: white; border-radius: 12px; max-width: 500px; width: 90%; max-height: 90vh; overflow-y: auto; }
+      .modal-header { padding: 20px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+      .modal-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #666; }
+      .modal-body { padding: 20px; }
+      .form-group { margin-bottom: 20px; }
+      .form-label { display: block; margin-bottom: 5px; font-weight: 500; color: #333; }
+      .form-input, .form-textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; }
+      .form-textarea { resize: vertical; min-height: 80px; }
+      .btn { padding: 12px 24px; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer; transition: background 0.3s; }
+      .btn-primary { background: #667eea; color: white; }
+      .btn-primary:hover { background: #5a6fd8; }
+      .btn-full { width: 100%; }
+      .form-note { display: block; margin-top: 15px; font-size: 0.9rem; color: #666; text-align: center; }
+      .success-message { text-align: center; padding: 20px; }
+      .success-icon { font-size: 3rem; margin-bottom: 15px; }
+      
+      @media (max-width: 768px) {
+        .tripwire__content { flex-direction: column; text-align: center; }
+        .hero h1 { font-size: 2rem; }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CNTLB0M9.js"></script>
   </head>
   <body>
-    <div id="app">
-      <h1>Legion: новая сборка на Vite</h1>
-      <p>Если вы это видите — деплой работает.</p>
+    <div class="hero">
+      <div class="container">
+        <h1>Legion</h1>
+        <p>Профессиональный подбор персонала для вашего бизнеса</p>
+      </div>
     </div>
+    
+    <div class="container">
+      <div id="tripwire-container"></div>
+    </div>
+
   </body>
 </html>

@@ -2,7 +2,7 @@
  * Tripwire Component - Компонент трипвайера для максимальной конверсии
  * Отображает баннер для бесплатной консультации с формой захвата
  */
-class Tripwire {
+export class Tripwire {
   constructor(container, options = {}) {
     this.container = container;
     this.options = {
@@ -215,11 +215,4 @@ class Tripwire {
       `;
     }
   }
-}
-
-// Экспорт для использования
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = Tripwire;
-} else {
-  window.Tripwire = Tripwire;
 }
