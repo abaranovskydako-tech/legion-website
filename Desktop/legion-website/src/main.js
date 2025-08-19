@@ -1,0 +1,1 @@
+import './components/wire.js';
