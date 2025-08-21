@@ -48,3 +48,4 @@ export class HeroSection {
     return hero;
   }
 }
+

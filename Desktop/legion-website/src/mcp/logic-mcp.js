@@ -70,3 +70,4 @@ export class LogicMCP {
     return this.sessionId;
   }
 }
+

@@ -77,3 +77,4 @@ export class FooterSection {
     return footer;
   }
 }
+

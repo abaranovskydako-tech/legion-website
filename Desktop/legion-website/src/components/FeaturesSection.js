@@ -42,3 +42,4 @@ export class FeaturesSection {
     return section;
   }
 }
+
