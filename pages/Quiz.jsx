@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const Quiz = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -398,7 +398,7 @@ const Quiz = () => {
             </div>
             
             <div className="result-actions">
-              <Link to="/contacts" className="button-primary">
+              <Link href="/contacts" className="button-primary">
                 Оставить заявку
               </Link>
               <button 

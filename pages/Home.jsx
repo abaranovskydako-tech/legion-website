@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const Home = () => {
   const [heroFormData, setHeroFormData] = useState({
@@ -140,7 +140,7 @@ const Home = () => {
                 <button className="button-primary" onClick={() => document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' })}>
                   Рассчитать стоимость
                 </button>
-                <Link to="/services" className="button-secondary">
+                <Link href="/services" className="button-secondary">
                   Смотреть услуги
                 </Link>
               </div>

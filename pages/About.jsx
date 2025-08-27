@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const About = () => {
   const achievements = [
@@ -135,10 +135,10 @@ const About = () => {
             <h2>Готовы работать с нами?</h2>
             <p>Оставьте заявку, и мы свяжемся с вами в течение 15 минут для обсуждения деталей.</p>
             <div className="cta-buttons">
-              <Link to="/contacts" className="button-primary">
+              <Link href="/contacts" className="button-primary">
                 Оставить заявку
               </Link>
-              <Link to="/services" className="button-secondary">
+              <Link href="/services" className="button-secondary">
                 Посмотреть услуги
               </Link>
             </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const ServiceCard = ({ title, price, items, description, icon, features, popular }) => (
   <div className={`service-card ${popular ? 'popular' : ''}`}>
@@ -31,7 +31,7 @@ const ServiceCard = ({ title, price, items, description, icon, features, popular
       </ul>
     </div>
     
-    <Link to="/contacts" className="service-cta">
+    <Link href="/contacts" className="service-cta">
       <span>Заказать {title.toLowerCase()}</span>
       <span className="cta-arrow">→</span>
     </Link>
@@ -152,7 +152,7 @@ const Services = () => {
           <div className="cta-content">
             <h2>Нужен персонал не из списка?</h2>
             <p>Мы подберём специалистов под любые ваши задачи. Просто опишите, что нужно сделать.</p>
-            <Link to="/contacts" className="button-primary">
+            <Link href="/contacts" className="button-primary">
               Обсудить задачу
             </Link>
           </div>

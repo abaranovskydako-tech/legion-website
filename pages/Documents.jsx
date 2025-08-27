@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const Documents = () => {
   const documents = [
@@ -123,7 +123,7 @@ const Documents = () => {
             <h2>Нужны дополнительные документы?</h2>
             <p>Если вам требуются специфические документы или справки, свяжитесь с нами — мы подготовим их в кратчайшие сроки.</p>
             <div className="cta-buttons">
-              <Link to="/contacts" className="button-primary">
+              <Link href="/contacts" className="button-primary">
                 Связаться с нами
               </Link>
               <a href="tel:+73830000000" className="button-secondary">
